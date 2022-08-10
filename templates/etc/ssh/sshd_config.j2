@@ -17,11 +17,11 @@ HostKey {{ ssh_server_host_key }}
 {% endif %}
 {% endfor %}
 # Privilege Separation is turned on for security
-UsePrivilegeSeparation {{ 'yes' if ssh_server_use_privilege_separation else 'no' }}
+#UsePrivilegeSeparation {{ 'yes' if ssh_server_use_privilege_separation else 'no' }}
 
 # Lifetime and size of ephemeral version 1 server key
-KeyRegenerationInterval {{ ssh_server_key_regeneration_interval }}
-ServerKeyBits {{ ssh_server_server_key_bits }}
+#KeyRegenerationInterval {{ ssh_server_key_regeneration_interval }}
+#ServerKeyBits {{ ssh_server_server_key_bits }}
 
 # Logging
 SyslogFacility {{ ssh_server_syslog_facility }}
